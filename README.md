@@ -1,10 +1,13 @@
-# NodejsAuthentication
+# InventoryManagementSystem
 
 ⚙️ Functionality
 User signUp and signIn
-
 user signout
 Update user password
+addItem
+fetchItem
+updateItem
+DeleteItem
 
 #How to run it on your local system
 1.Fork the project

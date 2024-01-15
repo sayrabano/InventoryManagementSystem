@@ -1,0 +1,96 @@
+
+<head>
+    
+    <title><%=title%></title>
+ 
+  </head>
+  <body>
+    <div class="container mt-2">
+     
+        <div class="container">
+              <div class="card bg-glass">
+                <div class="card-body">
+                  <form action="/update-item/<%=items._id%>" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                      
+                      <h3 class="">Update Item</h3>
+                      
+                       <div class=".form-outline">
+                        <input  class="form-control" type="text" name="name" placeholder="" value="<%=items.name%>">
+                        <label class="form-label" for="form3Example3"
+                        >Name</label
+                      >
+                       </div>
+                      
+                       
+                       <div class="form-outline">
+                        <input  class="form-control" type="text" name="price" placeholder="" value="<%=items.price%>">
+                        <label class="form-label" for="form3Example3"
+                        >Price</label
+                      >
+                       </div>
+                       <div class="form-outline">
+                        <input  class="form-control" type="text" name="quantity" placeholder="" value="<%=items.quantity%>">
+                        <label class="form-label" for="form3Example3"
+                        >Quantity</label
+                      >
+                       </div>
+                       <div class="form-outline">
+                        <input  class="form-control" type="text" name="brand" placeholder="" value="<%=items.itemdetails.brand%>">
+                        <label class="form-label" for="form3Example3"
+                        >Brand</label
+                      >
+                       </div>
+                      </div>
+                      <div class="form-outline">
+                       <input  class="form-control" type="text" name="supplierinfo" placeholder="" value="<%=items.itemdetails.supplierinfo%>">
+                       <label class="form-label" for="form3Example3"
+                       >Supplier</label
+                     >
+                      </div>
+                       <div class="form-outline">
+                        <input class="form-control" type="text" name="category" placeholder="" value="<%=items.itemdetails.itemcategory.category %>
+                        ">
+                        <label class="form-label" for="form3Example3"
+                        >Category</label
+                      >
+                       </div>
+                       <div class="form-outline">
+                        <input  class="form-control" type="text" name="description" placeholder="" value="<%=items.itemdetails.description%>">
+                        <label class="form-label" for="form3Example3"
+                        >Description</label
+                      >
+                       </div>
+                       <div class="form-outline">
+                        <input  class="form-control" type="file" name="image" placeholder="">
+                        <img src="/<%=items.itemdetails.image%>" class="img-thumbnail-mt-1" width='50px'';/>
+                        <label class="form-label" for="form3Example3"
+                        >Select Image</label
+                      >
+                       </div>
+                       <input  class="form-control" type="hidden" name="old_image" placeholder="" value="<%=items.itemdetails.image%>">
+
+                     
+                      <button
+                      type="submit"
+                      class="btn btn-secondary btn-block mt-1"
+                    >
+                      Update Item
+                    </button>
+                       
+                   
+                    </form>
+
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+      
+    
+  </body>
+

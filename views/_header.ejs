@@ -1,0 +1,44 @@
+<!-- header view -->
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p style="margin-top: 10px;">
+                <a href='/'>
+                    Inventory Management System
+                </a>
+            </p>
+        </div>
+    
+        <div class="auth-links" >
+            <ul>
+                <!-- checking user if present will show signout ,additem and reset password link in header -->
+                <% if (locals.user){ %>
+                <li>
+                    <%= user.name %>
+                </li>
+                <li>
+                    <a href="/additem">AddItem</a>
+                </li>
+                <li>
+                    <a href="/destroy-session">Sign Out</a>
+                </li>
+                <li>
+                    <a href="/reset-password">Reset Password</a>
+                </li>
+                <% }else{ %>
+                    <!-- otherwise signin and signup -->
+                <li>
+                    <a href="/">Sign In</a>
+                </li>
+                <li>
+                    <a href="/sign-up">Sign Up</a>
+                </li>
+        
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+ 
+
+
+</header>

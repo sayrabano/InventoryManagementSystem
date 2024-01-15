@@ -9,27 +9,37 @@ fetchItem
 updateItem
 DeleteItem
 
-#How to run it on your local system
-1.Fork the project
-2.Clone the forked repository in your local system
-3.run the command on your terminal npm install to install all dependencies
-4.run the command on your terminal npm start to start the server running on the port 8000
-now then just go and type localhost:8000 on your system then it will run fine
+Inventory Management System Setup Guide
+Technologies Used
+•	Node.js
+•	JavaScript (Node.js runtime)
+•	HTML
+•	CSS
+•	Express.js (Node.js framework)
+•	MongoDB (Database)
+•	EJS (View template engine)
+•	Passport.js (Authentication)
+•	Google OAuth2 (Authentication)
+•	DataTables (Data table plugin)
+•	jQuery (JavaScript library)
+•	Bootstrap (CSS framework)
+Prerequisites
+•	Install Node.js
+•	Install MongoDB
+•	Ensure Git is installed
 
-#Tools Used
-1.NodeJS
-2.MongoDB
-3.ExpressJS
-4.EJS
-5.Bootstrap
-6.Libraries Used:
-7.connect-mongo
-8.cookie-parser
-9.ejs
-10.express
-11.express-ejs-layout
-12.express-session
-13.mongoose
-14.passport
-15.passport-jwt
-16.passport-local
+
+
+	Setup Steps
+•	Clone: https://github.com/sayrabano/InventoryManagementSystem
+•	Navigate to Project: cd Inventory Management /
+•	Install Dependencies: npm install
+•	Ensure your MongoDB server is running.
+•	Set up the database and collections needed for your project.
+2.	Run the Application: npm start
+3.	Access the Application: Open your browser and go to http://localhost:8000 to access the Inventory Management System.
+Additional Notes
+•	Make sure to configure Passport.js and Google OAuth credentials as per your authentication requirements.
+•	Adjust the port number or other configurations in the .env file or the config files as needed.
+
+
